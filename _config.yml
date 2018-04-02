@@ -1,0 +1,31 @@
+markdown: kramdown
+title: ResearchOps.community
+description: A community helping to run and scale design research
+exclude:
+- CONTRIBUTING.md
+- Gemfile
+- Gemfile.lock
+- README.md
+
+permalink: pretty
+highlighter: rouge
+kramdown:
+  auto_ids: true
+
+github:
+  organization: researchops
+  repository: www
+  default_branch: master
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
