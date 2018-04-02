@@ -30,20 +30,27 @@ a:visited{  color: #8d0058; }
   background: #ffe4c5; /* Gecko Browsers */
 }
 
-a{
+a.slack{
 	display: inline-block;
 	margin-top: 2em;
- 
+ 	border: 1px solid;
+ 	padding: 0.5em 0.67em;
+ 	border-radius: 4px;
+ 	text-decoration: none;
+	font-weight: 700;
+	font-size: 16px;
 }
 
-a::before{
+a.slack::before{
 	content: "";
 	width: 20px;
 	height: 20px;
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: -4px;
-	margin-right: 2px;
+	margin-top: -5px;
+	position: relative;
+	top: 1px;
+	margin-right: 4px;
 	background: left center;
 	background-size: 100%;
 	background-repeat: no-repeat;
