@@ -93,3 +93,312 @@ p{
 }
 
 /* @end */
+
+/* @group .layout--page main */
+
+.layout--page{
+  background: white;
+}
+.layout--page main hr{
+	display: block;
+	border: none;  
+	background: #333;
+	height: 3px;
+	position: relative;
+	margin-top: 28px;
+	margin-bottom: 28px;
+}
+
+.layout--page main hr::before{
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: 0;
+	right: 0;
+	border-top: 1px solid #333;
+}
+
+.layout--page main a{ color: #009b76; }
+.layout--page main a:hover{
+  color: #1f5f5a;
+  text-decoration: underline;
+}
+
+.layout--page main strong{ font-weight: 600; }
+.layout--page main em{ font-style: italic; }
+
+
+.layout--page main ol li:before{ margin-left: -1.4em;}
+
+.layout--page main p{ max-width: 40rem; }
+.layout--page main li{ max-width: 34.6em; }
+
+.layout--page main p, .layout--page main li{ line-height: 1.45em; }
+
+.layout--page main li{ list-style-type: square; }
+.layout--page main li:first-child h2{ margin-top: 0; }
+
+.layout--page main p.dedication,
+.layout--page main p.credit{
+  text-indent: 0;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 1.4em;
+  color: #333;
+}
+
+.layout--page main h1{
+  font-size: 28px;
+  line-height: 1.2em;
+  font-family: "abril-titling-condensed", Georgia, serif;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 0.6rem;
+  color: #cc4c34;
+}
+
+.layout--page main h1+ul, h1+ol{	padding-top: 0; }
+
+.layout--page main code{
+  font-family: Input Sans, Monaco, "Courier New", Courier, mono;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: #d6601d;
+}
+
+.layout--page main table{
+	width: 100%;
+	border: none;
+	font-size: 16px;
+	line-height: 1.5em;
+    font-family: "franklin-gothic-urw", arial, sans-serif;
+}
+
+.layout--page main table thead td{
+	font-weight: 600;
+	border-top: 0.3rem solid;
+    font-family: "franklin-gothic-urw", arial, sans-serif;
+}
+.layout--page main table td{
+	border-bottom: 1px solid #888;
+	padding: 0.3em;
+}
+
+.layout--page main figure{
+  line-height: 1.4em;
+  margin: 1em 0;
+  counter-increment: figure;
+}
+
+.layout--page main figure figcaption{
+    font-size: 16px;
+    line-height: 1.33em;
+    font-family: "franklin-gothic-urw", arial, sans-serif;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 568.88px){ .layout--page main figure figcaption{ line-height: 1.4em; } }
+
+.layout--page main figure img{
+	width: 100%;
+}
+
+.layout--page main section section h1,
+.layout--page main h2{
+  font-family: "franklin-gothic-urw", Arial;
+  line-height: 1.4em;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #222 !important;
+}
+
+.layout--page main h2.question{
+	font: inherit;
+	font-weight: normal;
+	font-style: italic;
+	line-height: 1.4em;
+}
+
+.layout--page main blockquote{
+  font-style: italic;
+  margin-bottom: 1.4em;
+  position: relative;
+  margin-left: 1.4em;
+  margin-top: 0.7em;
+}
+
+.layout--page main blockquote::before{
+  content: "\201C";
+  color: #555;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  font-size: 1.8em;
+  margin-right: 0.2em;
+  margin-top: 0.1em;
+}
+
+.layout--page main h1+blockquote{
+	margin-top: 24px;
+}
+
+.layout--page main li h2,
+.layout--page main blockquote h2{
+	font-size: 1em;
+	font-family: inherit;
+}
+
+.layout--page main blockquote p{ text-indent: 0 !important; }
+
+.layout--page main blockquote cite{
+  font-size: 0.9em;
+  font-style: normal;
+  font-family: "franklin-gothic-urw", Arial;
+  display: block;
+  margin-top: 0.6em;
+  line-height: 1.3em;
+  padding-left: 0.8em;
+}
+
+.layout--page main blockquote cite::before{
+  content: "\2014";
+  margin-left: -0.95em;
+  margin-right: 0.3em;
+  color: #555;
+}
+
+/* @group .pull-quote */
+
+.layout--page main .pull-quote{
+  font-family: "franklin-gothic-urw-cond", Arial, sans-serif;
+  font-style: normal;
+  color: #cc4c34;
+  text-indent: 0;
+  margin: 1em 0 0.5em;
+  padding-top: 0.5em;
+  text-align: center;
+  position: relative;
+}
+
+.layout--page main .pull-quote::before,
+.layout--page main .pull-quote::after{
+    content: "\201C";
+	display: block;
+	position: static;
+	font-size: 72px;
+	line-height: 0.1;
+	color: inherit;
+}
+
+.layout--page main .pull-quote::after{
+	content: "”";
+	margin-left: -0.2em;
+	margin-top: 0.5em;	
+}
+
+.layout--page main .pull-quote p{
+  font-size: 28px;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+@media screen and (min-width: 568.88px){
+	.layout--page main .pull-quote{
+	  width: 256px;
+	  float: right;
+	  text-align: left;
+	  box-sizing: border-box;
+	  padding-left: 1.5em;
+	  margin-left: 16px;
+	  margin-top: 1em;
+	  margin-bottom: 1em;
+	}
+	
+	.layout--page main .pull-quote+p{
+	  text-indent: 1.4em;
+    }
+	
+	.layout--page main .pull-quote p{
+		font-size: 32px;
+	}
+	
+	.layout--page main .pull-quote::before{
+		position: absolute;
+		left: 0;
+		top: 0.125em;
+		color: #ccc !important;
+	}
+	
+	.layout--page main .pull-quote::after{ display: none; }
+
+}
+
+
+/* @end */
+
+
+.layout--page main span.first-letter{
+  font-size: 3.2em;
+  float: left;
+  color: #cc4c34;
+  font-weight: 100;
+  margin-right: 0.1em;
+  margin-top: 0.35em;
+  font-family: "abril-fatface";
+}
+
+@media screen and (min-width: 568.88px){
+	.layout--page main hr{
+  	  margin-top: 28px;
+	  margin-bottom: 28px;
+	}
+	.layout--page main h2.question{ line-height: 1.5em; }
+	.layout--page main p, .layout--page main li{ line-height: 1.6em; } 
+	.layout--page main span.first-letter{ font-size: 6em; } 
+	.layout--page main table{ font-size: 18px; }
+}
+
+@media screen and (min-width: 711.11px){
+	.layout--page main table{ 
+		font-size: 19px;
+		line-height: 1.4em; 
+	}
+}
+
+div.celebrated-content{
+  background: #333;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+@media screen and (min-width: 853.33px){
+	.layout--page main .track-site-width{
+    	margin-right: -64px;
+    	margin-left: -64px;
+	}
+}
+
+@media screen and (min-width: 924.44px){
+  .layout--page main .track-site-width{
+    margin-right: -96px;
+    margin-left: -96px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+}
+
+@media screen and (min-width: 1137.77px){
+  .layout--page main .track-site-width{
+    margin-right: -192px;
+    margin-left: -192px;
+  }
+}
+
+/* @end */
