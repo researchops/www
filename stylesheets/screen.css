@@ -481,3 +481,17 @@ div.celebrated-content{
 }
 
 /* @end */
+
+/* @group home */
+
+.home main h1:first-of-type{
+	font-size: 35vw;
+	line-height: 0.8em;
+	font-family: Museo sans;
+  color: #2467d2;
+}
+.home .re-plus{
+  display: block;
+}
+
+/* @end */
