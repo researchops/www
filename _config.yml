@@ -21,6 +21,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  board_members:
+    output: true
+    permalink: /:path/
 
 defaults:
   -
