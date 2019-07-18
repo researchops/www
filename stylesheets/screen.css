@@ -4,6 +4,8 @@
 
 /* @override http://localhost:4000/stylesheets/screen.css */
 
+/* @override http://localhost:4000/stylesheets/screen.css */
+
 /* @group bootstrap */
 
 html {
@@ -53,18 +55,23 @@ a.slack:active{
 
 body{
 	font-family: museo-sans, Verdana, sans-serif;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #555;
-	background: url(images/angles.png);
+	background: #eee;
 	border-top: 1px solid #679d2a;
 }
 
+.site-width{
+	max-width: 720px;
+	margin: 0 auto;
+}
+
 main{
-	background: #fafafa;
+	background: #fefefe;
 	width: 90%;
-	max-width: 36em;
-	margin: 5vh auto;
+	max-width: 720px;
+	margin: 1em auto;
 	padding: 2em;
 	border-radius: 0.25em;
 	  border: 4px solid #fff;
@@ -72,18 +79,96 @@ main{
 }
 
 
-h1{
+main h1, 
+main h2{
   font-family: "source-serif-pro", georgia;
   font-weight: 700;
   font-size: 32px;
+  margin-top: 1em;
   margin-bottom: 0.6em;
   color: #404040;
   text-shadow: 0 1px white;
 }
 
+h1:first-of-type{ margin-top: 0; }
 
-p{
+main h1+p{ 
+	font-size: 18px;
+	line-height: 1.67em;
+	max-width: 32em;
+}
+
+main h2{
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 2em;
+  margin-bottom: 0.8em;
+  color: #404040;
+  text-shadow: 0 1px white;
+}
+
+
+main p, 
+main blockquote{
   line-height: 1.4em;
+  margin-bottom: 1em;
+  max-width: 40em;
+}
+
+main blockquote{
+	border-left: 3px solid #aaa;
+	padding-left: 20px;
+	font-style: italic;
+}
+
+main ul li{
+  list-style-type: disc;
+  margin-left: 1.4em;
+  margin-bottom: 0.6em;
+}
+
+main ul{
+	margin-bottom: 2em;
+}
+
+/* @end */
+
+/* @group header */
+
+.header{
+  padding-top: 1em;
+}
+
+.header li{
+	display: inline;
+}
+
+.header li::after{
+	content: "• ";
+}
+
+.header li:last-of-type::after{
+	content: "";
+}
+
+.header h1{
+	font-family: museo-sans, Verdana, sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	color: #1055cc;
+	float: left;
+}
+
+.header nav{
+	float: right;
+}
+
+.header::after{
+	content: "";
+	display: table;
+	clear: both;
+  
 }
 
 /* @end */
