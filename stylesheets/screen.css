@@ -75,7 +75,7 @@ main{
 	padding: 2em;
 	border-radius: 0.25em;
 	  border: 4px solid #fff;
-	  box-shadow: 0 4px 0 rgba(0,0,0,0.1)
+	  box-shadow: 0 4px 0 rgba(0,0,0,0.1);
 }
 
 
@@ -90,7 +90,7 @@ main h2{
   text-shadow: 0 1px white;
 }
 
-h1:first-of-type{ margin-top: 0; }
+main h1:first-of-type{ margin-top: 0; }
 
 main h1+p{ 
 	font-size: 18px;
