@@ -4,13 +4,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/gmt5eue.css">
     <link rel="stylesheet" href="../stylesheets/reset.css">
     <link rel="stylesheet" href="../stylesheets/screen.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <body class="layout--page">
+  <body class="layout--page layout--{{ page.title  | slugify }} ">
+
+    {% include navigation.html %}
+
     <main id="main" role="main">
-      <div class="wrapper">
-        <h1 class="page-title">{{ page.title }}</h1>
+      <h1 class="page-title">{{ page.title }}</h1>
+      <div class="site-width">
         {{ content }}
       </div>
     </main>
+
   </body>
 </html>
