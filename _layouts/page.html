@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://use.typekit.net/gmt5eue.css">
-    <link rel="stylesheet" href="../stylesheets/reset.css">
-    <link rel="stylesheet" href="../stylesheets/screen.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,600,600i|Montserrat:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/reset.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/screen.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body class="layout--page layout--{{ page.title  | slugify }} ">
 
-    {% include navigation.html %}
+    {% include header.html %}
 
     <main id="main" role="main">
       <h1 class="page-title">{{ page.title }}</h1>
@@ -16,6 +16,8 @@
         {{ content }}
       </div>
     </main>
+
+    {% include footer.html %}
 
   </body>
 </html>

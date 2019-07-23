@@ -1,19 +1,18 @@
 ---
-permalink: /about
 title: About
 ---
 
 <p>We&rsquo;re a global community discussing ResearchOps &mdash; the people, mechanisms, and strategies that organizations use to scale their design and user research practice. Our Community began on the 8th of March, 2018 with a tweet from Kate Towsey.</p>
 
-<p>In addition to maintaining our Slack, our community is committed to facilitating global discussions via local workshops. Our <a href="https://medium.com/researchops-community/researchops-community-a-series-of-global-workshops-d48058ece814">first workshop series</a> helped us better define the discipline. In 2019, we’re running two more.</p>
+<p>In addition to maintaining our Slack, our community is committed to facilitating global discussions via local workshops. Our <a href="https://medium.com/researchops-community/researchops-community-a-series-of-global-workshops-d48058ece814">first workshop series</a> helped us better define the discipline. In 2019, we&rsquo;re running two more.</p>
 
 <section id="what">
   <h2>What is ResearchOps?</h2>          
-  <p>Working as a user researcher, design researcher, etc. means paying attention to things outside of research itself: liaising with stakeholders; managing ethics applications and consent forms; managing data; organising the why, when, and how much — and this is all before you’ve even started the research!</p>
+  <p>Working as a user researcher, design researcher, etc. means paying attention to things outside of research itself: liaising with stakeholders; managing ethics applications and consent forms; managing data; organising the why, when, and how much &mdash; and this is all before you&rsquo;ve even started the research!</p>
   <p>This is where ResearchOps begins. ResearchOps is an emergent consequence of knowledge work at scale. As an organization scales its research practice, it must also scale the operations of its research.</p>
-  <p>What does that entail, you might ask? We wondered the same thing. After our global series of workshops in 2018 (where we asked the question, “what is ResearchOps?”) we arrived at the following definition:</p>
-  <blockquote>“ResearchOps is the people, mechanisms, and strategies that set user research in motion. It provides the roles, tools and processes needed to support researchers in delivering and scaling the impact of the craft across an organisation.”</blockquote>
-  <p>For more information, see this Medium post, and the map in Mural or Kumu.</p>
+  <p>What does that entail, you might ask? We wondered the same thing. After <a href="https://medium.com/researchops-community/researchops-community-a-series-of-global-workshops-d48058ece814">our global series of workshops in 2018</a> (where we asked the question, &ldquo;what is ResearchOps?&rdquo;) we arrived at the following definition:</p>
+  <blockquote>ResearchOps is the people, mechanisms, and strategies that set user research in motion. It provides the roles, tools and processes needed to support researchers in delivering and scaling the impact of the craft across an organisation.</blockquote>
+  <p>For more information, see <a href="https://medium.com/researchops-community/a-framework-for-whatisresearchops-e862315ab70d">this Medium post</a>, and the map in <a href="https://app.mural.co/t/researchopscommunity7839/m/researchopscommunity7839/1539419866773/d21dd2cce77e9e502dcdb46c4abfa7ad8a0aff88">Mural</a> or <a href="https://kumu.io/TeamReOps/what-is-researchops">Kumu</a>.</p>
 </section>
 
 <section id="why">
@@ -24,7 +23,7 @@ title: About
     <li>Bias</li>
     <li>Ethics</li>
     <li>Legal</li>
-    <li>Making research easier to do (i.e. “democratizing” research)</li>
+    <li>Making research easier to do (i.e. &ldquo;democratizing&rdquo; research)</li>
     <li>Operationalizing respect for the people who participate in our research</li>
     <li>Magnifying the impact of our research (knowledge sharing)</li>  
   </ul>
@@ -54,7 +53,7 @@ title: About
   <p>We are using these now to help us focus our community efforts.</p>
 
   <h3>Current Projects</h3>
-  <p>In 2019, we’re focused on two global pieces of research aimed at helping us help researchers or helping us help ourselves. We also have several community based projects in the works.</p>
+  <p>In 2019, we&rsquo;re focused on two global pieces of research aimed at helping us help researchers or helping us help ourselves. We also have several community based projects in the works.</p>
 
   <article class="project">
     <h4>Research repositories</h4>
@@ -89,23 +88,22 @@ title: About
     <dt>Ending date</dt> 
     <dd>June, 2019</dd>
     <dt>Goals</dt>  
-    <dd>Taking a look at what it is that researchers really do, where the challenges are, and how they’d like to push their practice forward.</dd>
+    <dd>Taking a look at what it is that researchers really do, where the challenges are, and how they&rsquo;d like to push their practice forward.</dd>
     <dt>GitHub Repo</dt> 
     <dd><a href="https://github.com/researchops/researcherskills-workshop"></a>researcherskills-workshop</dd>
   </article>
 </section>
 
-<section id="the-board">
+<section class="the-cheeses">
   <h2>The Board</h2>
   <p>The Board of ResearchOps (affectionately known as the Cheese Board) is a group of leaders who have taken on the role of shaping and leading the community. They are made from the original Team ReOps, formed at the end of the #WhatIsResearchOps workshops to bring together that work and share the task of caring for the Community and harnessing all that enthusiasm for our emergent profession.</p>
   <p>In December 2018, the board grew to 13 members stretched across the globe. All of the board members are people who have been doing work in the background, the unseen stuff, the Ops for the Ops people.</p>
   <p>The board is:</p>
-  <ul>
-    {% for member in site.board_members %}
-      <li>
-        <h3>{{ member.title }}</h3> 
-        <p>{{ member.content }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+  {% for member in site.board_members %}
+    <article class="member">
+      <h3>{{ member.title }}</h3> 
+      <img src="{{site.baseurl}}/images/board_members/{{member.profile_photo}}" alt="">
+      <p>{{ member.content }}</p>
+    </article>
+  {% endfor %}
 </section>

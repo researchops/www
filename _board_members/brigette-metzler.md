@@ -1,6 +1,5 @@
 ---
 title: Brigette Metzler
+profile_photo: brigette.jpg
 ---
-<h1>Brigette Metzler</h1>
-
-testing
+Brigette Metzler is a jump-in-with-both-boots kind of a person. She is passionate about the democratisation of knowledge. Currently working on the information architect end of the spectrum of user research and design research, Brigette is a lead User Research Librarian for the Australian Government. Brigette is passionate about the role of ResearchOps in helping researchers do their best work and most weeks can find her talking ResearchOps, and libraries in particular, with people from all over the place. Brigette was the Australian coordinator for the #WhatIsResearchOps workshops and has been with ReOps from the beginning. You can find Brigette for a chat on Twitter at <a href="https://twitter.com/BrigetteMetzler">@BrigetteMetzler</a>

@@ -1,11 +1,5 @@
 /* @override http://localhost:4000/stylesheets/screen.css */
 
-/* @override http://localhost:4000/stylesheets/screen.css */
-
-/* @override http://localhost:4000/stylesheets/screen.css */
-
-/* @override http://localhost:4000/stylesheets/screen.css */
-
 /* @group bootstrap */
 
 html {
@@ -30,48 +24,35 @@ a:hover{ color: #00aedf; }
   background: #ffe4c5; /* Gecko Browsers */
 }
 
-a.slack{
-	display: inline-block;
-	margin-top: 2em;
- 	padding: 0.75em 1em;
- 	border-radius: 4px;
- 	text-decoration: none;
-	font-weight: 700;
+
+body{
+	font-family: IBM Plex Sans, Verdana, sans-serif;
 	font-size: 16px;
-	background: #006fbe;
+	font-weight: 400;
+	background: #444;
 	color: white;
 }
 
-a.slack:hover{
-	background: #0060a5;
-}
-
-a.slack:active{
-	background: #005a9b;
-	color: #c1c8cd;
-}
-
-.notice p:last-child { margin-bottom: 0; }
-
-body{
-	font-family: museo-sans, Verdana, sans-serif;
-	font-size: 15px;
-	font-weight: 400;
+header,
+main {
 	color: #555;
 	background: #eee;
-	border-top: 1px solid #679d2a;
+	padding-bottom: 1em;
 }
 
-.site-width{
+.site-width,
+main > h1{
+	width: 95%;
 	max-width: 720px;
 	margin: 0 auto;
 }
 
-main{
-	background: #fefefe;
-	width: 90%;
-	max-width: 720px;
-	margin: 1em auto;
+main > h1{
+	padding-bottom: 0.4em;
+}
+
+main .site-width{
+	margin: 0 auto;
 	padding: 2em;
 	border-radius: 0.25em;
 	  border: 4px solid #fff;
@@ -81,7 +62,7 @@ main{
 
 main h1, 
 main h2{
-  font-family: "source-serif-pro", georgia;
+  font-family: Montserrat;
   font-weight: 700;
   font-size: 32px;
   margin-top: 1em;
@@ -90,7 +71,10 @@ main h2{
   text-shadow: 0 1px white;
 }
 
-main h1:first-of-type{ margin-top: 0; }
+main h1.page-title{ 
+	margin-top: 0; 
+	padding-top: 0.8em;
+}
 
 main h1+p{ 
 	font-size: 18px;
@@ -99,19 +83,18 @@ main h1+p{
 }
 
 main h2{
-  font-family: inherit;
+  font-family: Montserrat;
   font-weight: 600;
   font-size: 20px;
   margin-top: 2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 1em;
   color: #404040;
-  text-shadow: 0 1px white;
 }
 
 
 main p, 
 main blockquote{
-  line-height: 1.4em;
+  line-height: 1.5em;
   margin-bottom: 1em;
   max-width: 40em;
 }
@@ -138,45 +121,76 @@ main ul{
 
 .header{
   padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 16px;
 }
 
 .header li{
 	display: inline;
+	margin-right: 0.5em;
+}
+
+.layout--home li.nav-home a,
+.layout--about li.nav-about a,
+.layout--community li.nav-community a,
+.layout--resources li.nav-resources a{
+	font-weight: 600;
+	color: #333;
+	text-decoration: none;
+}
+
+.header li a {
+	color: inherit;
 }
 
 .header li::after{
+	padding-left: 0.4em;
 	content: "• ";
+	color: #888;
 }
 
-.header li:last-of-type::after{
-	content: "";
-}
+.header li:last-of-type{ margin-right: 0; }
+.header li:last-of-type::after{ content: ""; }
 
 .header h1{
-	font-family: museo-sans, Verdana, sans-serif;
+	font-family: Montserrat, Verdana, sans-serif;
 	font-weight: 900;
 	font-size: 18px;
 	color: #1055cc;
-	float: left;
+	margin-bottom: 0.8em;
 }
 
-.header nav{
-	float: right;
+.header h1 a{ 
+	color: inherit;  
+	text-decoration: none;
 }
 
-.header::after{
-	content: "";
-	display: table;
-	clear: both;
-  
-}
+
+@media screen and (min-width: 568.88px){ 
+
+	.header{ padding-bottom: 0; }
+	.header h1{ float: left; }
+
+	.header nav{ float: right; }
+	
+	.header::after{
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+
+ }
+
+
 
 /* @end */
 
 /* @group .layout--page main */
 
-.layout--page{
+.layout--page main .site-width{
   background: white;
+  margin-bottom: 2em;
 }
 .layout--page main hr{
 	display: block;
@@ -197,10 +211,8 @@ main ul{
 	border-top: 1px solid #333;
 }
 
-.layout--page main a{ color: #009b76; }
 .layout--page main a:hover{
-  color: #1f5f5a;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .layout--page main strong{ font-weight: 600; }
@@ -209,75 +221,13 @@ main ul{
 
 .layout--page main ol li:before{ margin-left: -1.4em;}
 
-.layout--page main p{ max-width: 40rem; }
+.layout--page main p{ max-width: 32em; }
 .layout--page main li{ max-width: 34.6em; }
 
-.layout--page main p, .layout--page main li{ line-height: 1.45em; }
+
 
 .layout--page main li{ list-style-type: square; }
-.layout--page main li:first-child h2{ margin-top: 0; }
 
-.layout--page main p.dedication,
-.layout--page main p.credit{
-  text-indent: 0;
-  font-style: italic;
-  font-size: 16px;
-  line-height: 1.4;
-  margin-top: 1.4em;
-  color: #333;
-}
-
-.layout--page main h1{
-  font-size: 28px;
-  line-height: 1.2em;
-  font-family: "abril-titling-condensed", Georgia, serif;
-  font-weight: 400;
-  margin-top: 36px;
-  margin-bottom: 0.6rem;
-  color: #cc4c34;
-}
-
-.layout--page main h1+ul, h1+ol{	padding-top: 0; }
-
-.layout--page main code{
-  font-family: Input Sans, Monaco, "Courier New", Courier, mono;
-  font-weight: 600;
-  font-size: 0.9em;
-  color: #d6601d;
-}
-
-.layout--page main table{
-	width: 100%;
-	border: none;
-	font-size: 16px;
-	line-height: 1.5em;
-    font-family: "franklin-gothic-urw", arial, sans-serif;
-}
-
-.layout--page main table thead td{
-	font-weight: 600;
-	border-top: 0.3rem solid;
-    font-family: "franklin-gothic-urw", arial, sans-serif;
-}
-.layout--page main table td{
-	border-bottom: 1px solid #888;
-	padding: 0.3em;
-}
-
-.layout--page main figure{
-  line-height: 1.4em;
-  margin: 1em 0;
-  counter-increment: figure;
-}
-
-.layout--page main figure figcaption{
-    font-size: 16px;
-    line-height: 1.33em;
-    font-family: "franklin-gothic-urw", arial, sans-serif;
-    margin-top: 1em;
-}
-
-@media screen and (min-width: 568.88px){ .layout--page main figure figcaption{ line-height: 1.4em; } }
 
 .layout--page main figure img{
 	width: 100%;
@@ -285,44 +235,20 @@ main ul{
 
 .layout--page main section section h1,
 .layout--page main h2{
-  font-family: "franklin-gothic-urw", Arial;
+  font-family: Montserrat;
   line-height: 1.4em;
-  margin-top: 32px;
-  margin-bottom: 8px;
   font-size: 23px;
-  font-weight: 600;
-  color: #222 !important;
-}
-
-.layout--page main h2.question{
-	font: inherit;
-	font-weight: normal;
-	font-style: italic;
-	line-height: 1.4em;
+  font-weight: 100;
 }
 
 .layout--page main blockquote{
   font-style: italic;
   margin-bottom: 1.4em;
   position: relative;
-  margin-left: 1.4em;
   margin-top: 0.7em;
+  max-width: 32em;
 }
 
-.layout--page main blockquote::before{
-  content: "\201C";
-  color: #555;
-  position: absolute;
-  right: 100%;
-  top: 0;
-  font-size: 1.8em;
-  margin-right: 0.2em;
-  margin-top: 0.1em;
-}
-
-.layout--page main h1+blockquote{
-	margin-top: 24px;
-}
 
 .layout--page main li h2,
 .layout--page main blockquote h2{
@@ -418,79 +344,33 @@ main ul{
 
 /* @end */
 
-
-.layout--page main span.first-letter{
-  font-size: 3.2em;
-  float: left;
-  color: #cc4c34;
-  font-weight: 100;
-  margin-right: 0.1em;
-  margin-top: 0.35em;
-  font-family: "abril-fatface";
-}
-
-@media screen and (min-width: 568.88px){
-	.layout--page main hr{
-  	  margin-top: 28px;
-	  margin-bottom: 28px;
-	}
-	.layout--page main h2.question{ line-height: 1.5em; }
-	.layout--page main p, .layout--page main li{ line-height: 1.6em; }
-	.layout--page main span.first-letter{ font-size: 6em; }
-	.layout--page main table{ font-size: 18px; }
-}
-
-@media screen and (min-width: 711.11px){
-	.layout--page main table{
-		font-size: 19px;
-		line-height: 1.4em;
-	}
-}
-
-div.celebrated-content{
-  background: #333;
-  color: white;
-  padding: 1em 0;
-  text-align: center;
-  font-size: 1.4em;
-  line-height: 1.4;
-  font-style: italic;
-}
-
-@media screen and (min-width: 853.33px){
-	.layout--page main .track-site-width{
-    	margin-right: -64px;
-    	margin-left: -64px;
-	}
-}
-
-@media screen and (min-width: 924.44px){
-  .layout--page main .track-site-width{
-    margin-right: -96px;
-    margin-left: -96px;
-    margin-top: 2em;
-    margin-bottom: 2em;
-  }
-}
-
-@media screen and (min-width: 1137.77px){
-  .layout--page main .track-site-width{
-    margin-right: -192px;
-    margin-left: -192px;
-  }
-}
-
 /* @end */
 
 /* @group home */
 
-.home main h1:first-of-type{
-	font-size: 35vw;
-	line-height: 0.8em;
-	font-family: Museo sans;
+.layout--home .page-title{ display: none; }
+
+.layout--home main .site-width h1:first-of-type{
+  font-size: 30vw;
+  line-height: 0.8em;
   color: #2467d2;
+  margin: 0;
+  padding: 0 0 0.4em;
+  text-transform: lowercase;
+  display: block;
+  overflow: hidden;
 }
-.home .re-plus{
+
+
+@media screen and (min-width: 757.89px){ 
+
+.layout--home main .site-width h1:first-of-type{
+	font-size: 18em;
+}
+
+ }
+
+.layout--home main .site-width .re-plus{
   display: block;
 }
 
@@ -519,6 +399,51 @@ article.project dt{
 article.project dd{
 	margin-left: 1.4em;
 	line-height: 1.4em;
+}
+
+.member{
+  min-height: 128px;
+  padding-top: 144px;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
+  position: relative;
+}
+.member p{
+  font-size: 14px;
+  line-height: 1.33em;
+  color: #404040;
+}
+
+.member img{
+	width: 128px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 4px;
+}
+
+.member h3{
+	font-weight: 600;
+	margin-bottom: 0.4em;
+  
+}
+
+@media screen and (min-width: 568.88px){ 
+
+.member{
+	padding-left: 144px;
+	padding-top: 0;
+	position: relative;
+}
+
+
+.member img{
+	width: 128px;
+	left: 0;
+	margin: 0;
+}
+
 }
 
 /* @end */
