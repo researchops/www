@@ -1,5 +1,6 @@
 ---
 title: Brad Orego
+profile_photo: brad.jpg
 ---
 Brad holds a B.S. in Computer Science, a B.A. in Psychology, and minors in Spanish and Dance from the University of Rochester with a focus in Human-Computer Interaction and Social Psychology. Since 2011 he’s been helping companies from early-stage startup to Fortune 500 develop engaging, fulfilling experiences for their users.
 
