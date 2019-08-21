@@ -1,7 +1,8 @@
 ---
 title: Brad Orego
 ---
-Brad holds a B.S. in Computer Science, a B.A. in Psychology, and minors in Spanish and Dance from the University of Rochester with a focus in Human-Computer Interaction and Social Psychology. Since 2011 he’s been helping companies from early-stage startup to Fortune 500 develop engaging, fulfilling experiences for their users.
+Brad Orego is a User Experience Leader, User Researcher, Experience Designer, and Dancer currently located in Brooklyn, NY.  Since 2011 he’s been helping companies from early-stage startup to Fortune 500 develop engaging, fulfilling experiences for their users.
 
-Brad has launched over 20 products and touched well over 5 million users, with budgets ranging from $0 to $10M+, as well as having designed dozens of usability research studies and over 250 unmoderated remote research sessions. This diverse background gives him the ability to thrive in any environment, and to work with anyone from contributing engineer to C-suite executive. Collaborative yet firm, Brad understands the value in user-centric product development.
+Brad is a graduate of the [University of Rochester](https://rochester.edu) with a B.S. in Computer Science, a B.A. in Psychology, and minors in Spanish and Dance. He currently spends his days as the Director of User Experience at [1010data](https://1010data.com) as well as dancing professionally with [Sokolow Theater Dance Ensemble](https://sokolowtheatredance.org) and [Kanopy Dance Company](https://kanopydance.org). 
 
+Brad is an active mentor in the NYC UX world, [makes and blogs about beer-batter pancakes](http://beerbatterbreakfast.com), homebrews, plays ultimate frisbee, curls, and rides his bicycle throughout Brooklyn. You can learn more about him and his thoughts via [his website](https://bradorego.com).
