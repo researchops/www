@@ -450,7 +450,7 @@ article.project dd{
 
 /* @group footer */
 
-.site-footer { padding-top: 2em; }
+.site-footer { padding: 2em 0; }
 
 .site-footer h1 {
   	font-family: Montserrat, Verdana, sans-serif;
