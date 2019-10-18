@@ -431,19 +431,73 @@ article.project dd{
 
 @media screen and (min-width: 568.88px){ 
 
-.member{
-	padding-left: 144px;
-	padding-top: 0;
-	position: relative;
+	.member{
+		padding-left: 144px;
+		padding-top: 0;
+		position: relative;
+	}
+	
+	
+	.member img{
+		width: 128px;
+		left: 0;
+		margin: 0;
+	}
+
+}
+
+/* @end */
+
+/* @group footer */
+
+.site-footer { padding-top: 2em; }
+
+.site-footer h1 {
+  	font-family: Montserrat, Verdana, sans-serif;
+	font-weight: 900;
+	font-size: 18px;
+	color: #1055cc;
+	margin-bottom: 0.8em;  
+}
+
+.site-footer h1 a{ text-decoration: none; }
+
+.site-footer a,
+.site-footer a:visited { 
+  color: white;  
+}
+
+.site-footer li{
+  margin-left: 1.4em;
+  margin-bottom: 0.6em;
 }
 
 
-.member img{
-	width: 128px;
-	left: 0;
-	margin: 0;
+@media screen and (min-width: 568.88px){ 
+
+.site-footer h1,
+.site-footer ul,
+.site-footer li{ float: left; }
+
+.site-footer .nav-secondary{ 
+	font-size: 12px;
+	line-height: 1.4em;
+	float: right; 
 }
 
+.site-footer::after {
+	content: "";
+	display: table;
+	clear: both;
+}	
+	
+	.member img{
+		width: 128px;
+		left: 0;
+		margin: 0;
+	}
+
 }
+
 
 /* @end */
