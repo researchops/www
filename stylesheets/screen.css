@@ -460,6 +460,18 @@ article.project dd{
 	margin-bottom: 0.8em;  
 }
 
+.site-footer h1 abbr{
+	text-decoration: none;
+}
+
+.layout--home .site-footer li.nav-home a,
+.layout--about .site-footer li.nav-about a,
+.layout--community .site-footer li.nav-community a, 
+.layout--resources .site-footer li.nav-resources a{
+	color: white;
+  
+}
+
 .site-footer h1 a{ text-decoration: none; }
 
 .site-footer a,
