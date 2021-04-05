@@ -33,7 +33,7 @@ GEM
       sass (~> 3.4)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (1.8.6)
+    json (2.3.0)
     kramdown (1.17.0)
     liquid (4.0.3)
     listen (3.1.5)
@@ -62,7 +62,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  json (~> 1.8.6)
+  json (~> 2.3.0)
   rouge
 
 BUNDLED WITH
