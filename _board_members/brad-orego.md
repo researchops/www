@@ -2,7 +2,7 @@
 title: Brad Orego
 profile_photo: orego-kanopy-headshot.jpeg
 ---
-Brad Orego is a User Researcher, Experience Designer, Entrepreneur, and Dancer currently located in Brooklyn, NY. 
+Brad Orego (they/he) is a User Researcher, Experience Designer, Entrepreneur, and Dancer currently located in Brooklyn, NY. 
 
 He spends his days as the Director of User Experience at 1010data as well as dancing professionally with <a href="https://sokolowtheatredance.org">Sokolow Theater Dance Ensemble</a> and <a href="https://kanopydance.org">Kanopy Dance Company</a>. 
 
